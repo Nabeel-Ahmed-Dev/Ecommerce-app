@@ -1,9 +1,5 @@
-import Navbar from "@/components/Navbar/Navbar";
 import "./globals.scss";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Décor Dreams",
@@ -18,8 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className}`}
+        // className={}
         style={{
+          fontFamily: "Lustria",
           background: "rgba(182, 151, 120, 0.2)",
         }}
       >
