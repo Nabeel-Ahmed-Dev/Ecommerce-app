@@ -1,0 +1,18 @@
+.loading__root {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+
+  .loading__container {
+    width: 500vw;
+    height: 500vw;
+    position: absolute;
+    transform-origin: 300vw calc(250vw + 100vh);
+    top: -250vw;
+    left: -250vw;
+    border-radius: 50%;
+    background: #091515;
+  }
+}

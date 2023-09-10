@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lustria&family=Luxurious+Roman&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+html {
+  font-size: calc(100vw / 1920px * 16px);
+}

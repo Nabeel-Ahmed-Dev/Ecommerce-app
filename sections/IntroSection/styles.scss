@@ -1,0 +1,39 @@
+.intro__title {
+  margin-top: 10vh;
+  font-family: "Luxurious Roman", cursive;
+  font-size: 7.594rem;
+  line-height: 95%;
+  transform: translateY(80px);
+  clip-path: polygon(0 200%, 100% 200%, 100% 200%, 0% 200%);
+
+  .intro__text__home {
+    display: inline-block;
+    position: relative;
+
+    svg {
+      width: 100%;
+      height: inherit;
+      position: absolute;
+      top: -50%;
+      left: 0;
+    }
+  }
+
+  .intro__text__imagination {
+    display: inline-block;
+    position: relative;
+
+    svg {
+      width: 100%;
+      height: inherit;
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      path {
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+      }
+    }
+  }
+}

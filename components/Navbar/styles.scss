@@ -1,0 +1,35 @@
+.navbar__root {
+  width: 100%;
+  // height: 8vh;
+  margin-top: 40px;
+  // padding: 64px 0px;
+  display: flex;
+  justify-content: space-between;
+
+  .navbar__menu {
+    align-self: center;
+
+    .navbar__menu__item {
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+      transform: translateY(40px);
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+
+  .navbar__items {
+    display: flex;
+    gap: 20px;
+
+    .navbar__item {
+      transform: translateY(40px);
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+}
