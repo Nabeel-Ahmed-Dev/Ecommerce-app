@@ -1,18 +1,6 @@
 import { gsap, Expo } from ".";
 
-export const loaderAnimation = (onCompleteCallback: () => void) => {
-  // new Vivus(
-  //   document.querySelector("#circle") as HTMLElement,
-  //   { duration: 200, type: "oneByOne" },
-  //   (vivus) => {
-  //     console.log("vivus runns", vivus);
-  //   }
-  // );
-  // new Vivus(document.querySelector("#underline") as HTMLElement, {
-  //   duration: 200,
-  //   type: "oneByOne",
-  // });
-
+export const loaderIntroAnimation = (onCompleteCallback: () => void) => {
   gsap
     .timeline()
     .to(
@@ -59,14 +47,25 @@ export const loaderAnimation = (onCompleteCallback: () => void) => {
       "-=1.0"
     )
     .to(
-      ".intro__title",
+      [".intro__title", ".intro__description"],
       {
         clipPath: "polygon(0 -100%, 100% -100%, 100% 200%, 0% 200%)",
         y: 0,
+        stagger: 0.2,
         ease: Expo.easeInOut,
 
         duration: 4,
       },
-      "-=3"
+      "-=2.5"
+    )
+    .to(
+      [".intro__title__image1 img", ".intro__title__image2 img"],
+      {
+        // clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0% 100%)",
+        x: 0,
+        ease: Expo.easeInOut,
+        duration: 1,
+      },
+      "-=1.8"
     );
 };

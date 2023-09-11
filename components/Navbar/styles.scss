@@ -12,6 +12,7 @@
     .navbar__menu__item {
       clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
       transform: translateY(40px);
+      will-change: transform;
       display: flex;
       gap: 8px;
       align-items: center;
@@ -24,6 +25,7 @@
 
     .navbar__item {
       transform: translateY(40px);
+      will-change: transform;
       clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
       position: relative;
       overflow: hidden;

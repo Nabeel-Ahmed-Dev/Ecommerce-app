@@ -1,15 +1,14 @@
 "use client";
 
+import { loaderIntroAnimation } from "@/utils/loaderIntroAnimation";
 import { useEffect, useRef } from "react";
 import "./styles.scss";
-import { gsap, Expo } from "gsap";
-import { loaderAnimation } from "@/utils/loaderAnimation";
 
 const LoadingScreen = () => {
   const loadingEl = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    loaderAnimation(() => {
+    loaderIntroAnimation(() => {
       if (!loadingEl.current) return;
       loadingEl.current.style.display = "none";
     });

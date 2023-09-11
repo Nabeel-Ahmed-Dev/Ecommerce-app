@@ -6,6 +6,7 @@
   overflow: hidden;
 
   .root__title {
+    will-change: transform;
     font-family: "Luxurious Roman", cursive;
     font-size: 7.594rem;
     position: absolute;

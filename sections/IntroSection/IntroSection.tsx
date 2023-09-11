@@ -27,8 +27,22 @@ const IntroHeading = () => {
 
 const IntroSection = () => {
   return (
-    <Root>
-      <IntroHeading />
+    <Root className="intro__root">
+      <div className="intro__title__root">
+        <IntroHeading />
+        <div className="intro__title__image1">
+          <img src="/images/interior.jpg" alt="Interior Design" />
+        </div>
+      </div>
+      <div className="intro__title__root2">
+        <div className="intro__title__image2">
+          <img src="/images/intro-sofa.png" alt="Sofa" />
+        </div>
+        <p className="intro__description">
+          At DecorDreams, we turn your home aspirations into beautifully
+          decorated realities. Explore, dream, decorate!
+        </p>
+      </div>
     </Root>
   );
 };
