@@ -32,7 +32,7 @@ export const loaderAnimation = (onCompleteCallback: () => void) => {
         delay: 1,
         color: "black",
       },
-      "anim+=0.4"
+      "anim+=0.7"
     )
     .to(
       ".root__title",
